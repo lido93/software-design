@@ -2,7 +2,6 @@
 require "sequel"                                                       #
 DB = Sequel.connect "sqlite://#{Dir.pwd}/development.sqlite3"          #
 ########################################################################  
-
 # Database schema - this should reflect your domain model
 DB.create_table! :events do
   primary_key :id
